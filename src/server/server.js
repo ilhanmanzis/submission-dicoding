@@ -47,7 +47,7 @@ const InputError = require('../exceptions/InputError');
              return h.response({
                 status: 'fail',
                 message: 'Terjadi kesalahan dalam melakukan prediksi',
-            }).code(error.statusCode || 400);
+            }).code(400);
         }
         return h.continue;
     })

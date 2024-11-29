@@ -17,7 +17,7 @@ async function predictClassification(model, image){
         const label = confidenceScore > 50 ? 'Cancer' : 'Non-cancer';
 
         let suggestion;
-        if(label === 'cancer'){
+        if(label === 'Cancer'){
             suggestion = "Segera periksa ke dokter!"
         }else{
             suggestion = "Penyakit kanker tidak terdeteksi."
